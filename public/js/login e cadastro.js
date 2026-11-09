@@ -10,9 +10,9 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
 })
 
-var nomes = [];
-var emails = [];
-var senhas = [];
+let nomes = [];
+let emails = [];
+let senhas = [];
 
 function cadastrar() {
     nomes.push(document.getElementById('cadNome').value);
@@ -24,11 +24,11 @@ function cadastrar() {
 }
 
 function entrar() {
-    var email = document.getElementById('loginEmail').value;
-    var senha = document.getElementById('loginSenha').value;
-    var achou = false;
+    let email = document.getElementById('loginEmail').value;
+    let senha = document.getElementById('loginSenha').value;
+    let achou = false;
 
-    for (var i = 0; i < emails.length; i++) {
+    for (let i = 0; i < emails.length; i++) {
         if (emails[i] == email && senhas[i] == senha) {
             achou = true;
             alert("Bem-vindo(a), " + nomes[i] + "!");

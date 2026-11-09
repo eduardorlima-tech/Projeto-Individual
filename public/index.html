@@ -4,63 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
 
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Cadastrar conta</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>Ou use seu e-mail para se cadastrar</span>
-                <input type="text" id="cadNome" placeholder="Nome">
-                <input type="email" id="cadEmail" placeholder="E-mail">
-                <input type="password" id="cadSenha" placeholder="Senha">
-                <button type="button" onclick="cadastrar()">Cadastrar</button>
-            </form>
-        </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Fazer login</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>Ou use seu e-mail e senha</span>
-                <input type="email" id="loginEmail" placeholder="E-mail">
-                <input type="password" id="loginSenha" placeholder="Senha">
-                <a href="#">Esqueceu sua senha?</a>
-                <button type="button" onclick="entrar()">Entrar</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Bem-vindo de volta!</h1>
-                    <p>Entre com seus dados para ter acesso a todas as funcionalidades</p>
-                    <button class="hidden" id="login">Entrar</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Olá!</h1>
-                    <p>Cadastre seus dados para ter acesso a todas as funcionalidades</p>
-                    <button class="hidden" id="register">Cadastrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <header>
+        <a href="#" class="logo">
+            <img src="../public/assets/imgs/fernweh/ezgif-2406c2bc235c19c4.gif" alt="Fernweh">
+        </a>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin">Login</button>
+        </nav>
+    </header>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
